@@ -21,15 +21,9 @@ function RecipeList({recipes, setRecipes, deleteItem}) {
           <tr key={index} className='recipe'>
               <td>{recipe.name}</td>
               <td>{recipe.cuisine}</td>
-<<<<<<< HEAD
-              <td><img src={recipe.photo} /></td>
+              <td><img src={recipe.photo} alt='recipe photo'/></td>
               <td className="content_td"><p>{(recipe.ingredients)}</p></td>
               <td className="content_td"><p>{(recipe.preparation)}</p></td>
-=======
-              <td><img src={recipe.photo} alt='recipe photo' /></td>
-              <td>{recipe.ingredients}</td>
-              <td>{recipe.preparation}</td>
->>>>>>> a8a2395833c84431341de72d03d07b0fdcc125a2
               <td><button name="delete" onClick={() => deleteItem(index)}>delete</button></td>
           </tr>
           ))}
