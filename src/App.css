@@ -49,6 +49,17 @@ img {
   height: 100%;
 }
 
+form td {
+  width: 10%
+}
+
+form td:nth-child(4) {
+  width: 30%;
+}
+form td:nth-child(5) {
+  width: 30%;
+}
+
 /* table */
 
 table {
