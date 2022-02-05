@@ -6,9 +6,12 @@ import RecipeData from "./RecipeData"
 
 function App() {
   const [recipes, setRecipes] = useState(RecipeData);
+  
+  //add new user inputs to recipes data
   const addRecipes = (recipe) => {
-    setRecipes((current) => [...current, recipe])
+     setRecipes((current) => [...current, recipe])
   }
+  
   //edit/delete function
   const deleteItem = ((index) => 
      setRecipes((recipe) =>
